@@ -1,0 +1,54 @@
+@import "../../scss/variables";
+
+#button {
+  @include flexCenter();
+  a {
+    position: relative;
+    padding: 20px 30px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 200px;
+    overflow: hidden;
+    span {
+      position: relative;
+      z-index: 1;
+      color: black;
+      font-size: 20px;
+      letter-spacing: 8px;
+    }
+    .liquid-button {
+      position: absolute;
+      left: 0;
+      top: -80px;
+      width: 200px;
+      height: 200px;
+      background: $primaryColor;
+      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+      transition: 0.5s;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -75%);
+      }
+      &::before {
+        border-radius: 45%;
+        background: rgba(20, 20, 20, 1);
+        animation: buttonanimate 5s linear infinite;
+      }
+      &::after {
+        border-radius: 40%;
+        background: rgba(20, 20, 20, 0.5);
+        animation: buttonanimate 10s linear infinite;
+      }
+    }
+    &:hover .liquid-button {
+      top: -120px;
+    }
+  }
+}
