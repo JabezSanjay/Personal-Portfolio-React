@@ -1,0 +1,44 @@
+@import "../../scss/variables";
+
+.socialmedia {
+  @include flexCenter();
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    li {
+      list-style: none;
+      margin: 0 5px;
+      a {
+        position: relative;
+        @include flexCenter();
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 30px;
+        color: $primaryColor;
+        transition: 0.5s;
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: $primaryColor;
+          border-radius: 50%;
+          z-index: -1;
+          transform: scale(0);
+          transition: 0.5s;
+        }
+        &:hover {
+          color: #fff;
+          &:before {
+            transform: scale(1);
+          }
+        }
+      }
+    }
+  }
+}
