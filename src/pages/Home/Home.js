@@ -4,7 +4,7 @@ import "./Home.modules.scss";
 
 const Home = () => {
   return (
-    <div>
+    <div className="homepage">
       <Navbar />
     </div>
   );
