@@ -3,8 +3,8 @@ import "./Navbar.modules.scss";
 
 const navbar = () => {
   return (
-    <div>
-      <div className="wavy">
+    <div className="navbar">
+      <div className="navbar__logo">
         <span>J</span>
         <span>A</span>
         <span>B</span>
