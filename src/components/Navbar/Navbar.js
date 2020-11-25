@@ -2,26 +2,20 @@ import React from "react";
 import "./Navbar.modules.scss";
 
 const navbar = () => {
-  const logoLetters = [
-    "J",
-    "A",
-    "B",
-    "E",
-    "",
-    "Z",
-    "S",
-    "A",
-    "N",
-    "J",
-    "A",
-    "Y",
-  ];
   return (
     <div>
       <div className="wavy">
-        {logoLetters.map((letter, index) => {
-          return <span>{letter}</span>;
-        })}
+        <span>J</span>
+        <span>A</span>
+        <span>B</span>
+        <span>E</span>
+        <span>Z</span>
+        <span>S</span>
+        <span>A</span>
+        <span>N</span>
+        <span>J</span>
+        <span>A</span>
+        <span>Y</span>
       </div>
     </div>
   );
