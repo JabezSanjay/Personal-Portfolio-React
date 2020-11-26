@@ -22,6 +22,7 @@ $tertiaryColor: #222831;
 
 $hoverEasing: cubic-bezier(0.23, 1, 0.32, 1);
 $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
 @keyframes buttonanimate {
   0% {
     transform: translate(-50%, -75%) rotate(0deg);

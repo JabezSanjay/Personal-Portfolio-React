@@ -2,6 +2,7 @@
 
 #button {
   @include flexCenter();
+  margin-top: 2rem;
   a {
     position: relative;
     padding: 20px 30px;

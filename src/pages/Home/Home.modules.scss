@@ -3,4 +3,29 @@
 .homepage {
   min-height: 100vh;
   background: black;
+  flex-direction: column;
+  @include flexCenter();
+  .mainhead {
+    #main-text {
+      text-align: center;
+      margin: 2rem;
+      font-size: 1.5em;
+      color: $whiteColor;
+      letter-spacing: 2px;
+      span {
+        color: $primaryColor;
+      }
+    }
+    #color-dance-text {
+      color: $whiteColor;
+      font-size: 1em;
+      margin-bottom: 2rem;
+      letter-spacing: 5px;
+      text-align: center;
+      text-transform: uppercase;
+      span {
+        color: $primaryColor;
+      }
+    }
+  }
 }
