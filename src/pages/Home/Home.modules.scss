@@ -9,7 +9,7 @@
     #main-text {
       text-align: center;
       margin: 2rem;
-      font-size: 1.6em;
+      font-size: 1.8em;
       color: $whiteColor;
       letter-spacing: 2px;
       span {
@@ -25,6 +25,48 @@
       text-transform: uppercase;
       span {
         color: $primaryColor;
+      }
+    }
+  }
+}
+
+/* Below  360px width */
+@media (max-width: $smallDevices) {
+  .homepage {
+    .mainhead {
+      #main-text {
+        font-size: 1.5em;
+      }
+      #color-dance-text {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+/* iPhone SE & 5 */
+@media (max-width: $iPhone5_se) {
+  .homepage {
+    .mainhead {
+      #main-text {
+        font-size: 1.3em;
+      }
+      #color-dance-text {
+        font-size: 0.8em;
+      }
+    }
+  }
+}
+/* Galaxy Fold Devices */
+@media (max-width: $galaxyFold) {
+  .homepage {
+    .mainhead {
+      #main-text {
+        margin: 1.5rem;
+        font-size: 1.2em;
+      }
+      #color-dance-text {
+        margin: 1.5rem 0.5rem;
+        font-size: 0.8em;
       }
     }
   }

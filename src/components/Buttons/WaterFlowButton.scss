@@ -53,3 +53,22 @@
     }
   }
 }
+
+/* iPhone SE & 5 */
+@media (max-width: $iPhone5_se) {
+  #button {
+    a {
+      padding: 16px 30px;
+    }
+  }
+}
+
+/* Galaxy Fold Devices */
+@media (max-width: $galaxyFold) {
+  #button {
+    a {
+      width: 170px;
+      padding: 16px 15px;
+    }
+  }
+}

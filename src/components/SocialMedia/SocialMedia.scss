@@ -42,3 +42,29 @@
     }
   }
 }
+
+/* iPhone SE & 5 */
+@media (max-width: $iPhone5_se) {
+  .socialmedia {
+    ul {
+      li {
+        a {
+          font-size: 27.5px;
+        }
+      }
+    }
+  }
+}
+
+/* Galaxy Fold Devices */
+@media (max-width: $galaxyFold) {
+  .socialmedia {
+    ul {
+      li {
+        a {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
