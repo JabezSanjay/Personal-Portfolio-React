@@ -72,3 +72,23 @@
     }
   }
 }
+
+/* iPad Devices */
+@media (max-width: $iPad) {
+  #button {
+    a {
+      width: 190px;
+      padding: 20px 25px;
+    }
+  }
+}
+
+/* iPad Pro Devices */
+@media (max-width: $iPadPro) {
+  #button {
+    a {
+      width: 200px;
+      padding: 20px 30px;
+    }
+  }
+}

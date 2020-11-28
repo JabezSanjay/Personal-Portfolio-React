@@ -71,3 +71,32 @@
     }
   }
 }
+
+/* iPad Devices */
+@media (max-width: $iPad) {
+  .homepage {
+    .mainhead {
+      #main-text {
+        font-size: 2.2em;
+      }
+      #color-dance-text {
+        font-size: 1.1em;
+      }
+    }
+  }
+}
+
+/* iPad Pro Devices */
+@media (max-width: $iPadPro) {
+  .homepage {
+    .mainhead {
+      #main-text {
+        font-size: 2.5em;
+      }
+      #color-dance-text {
+        font-size: 1.3em;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
