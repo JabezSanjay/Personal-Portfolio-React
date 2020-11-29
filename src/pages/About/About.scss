@@ -1,1 +1,5 @@
 @import "../../scss/variables.scss";
+
+.aboutpage {
+  @include pageBackground();
+}

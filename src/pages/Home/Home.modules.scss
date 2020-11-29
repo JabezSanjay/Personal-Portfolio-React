@@ -1,8 +1,7 @@
 @import "../../scss/variables.scss";
 
 .homepage {
-  min-height: 100vh;
-  background: black;
+  @include pageBackground();
   flex-direction: column;
   @include flexCenter();
   .mainhead {
@@ -29,6 +28,7 @@
     }
   }
 }
+
 /* Below  360px width */
 @media (min-width: 331px) and (max-width: $smallDevices) {
   .homepage {

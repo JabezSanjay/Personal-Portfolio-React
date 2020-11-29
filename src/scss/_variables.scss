@@ -32,11 +32,15 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 }
 
-/* FlexCenter */
+/* mixin */
 @mixin flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@mixin pageBackground {
+  min-height: 100vh;
+  background: black;
 }
 
 /* mediaquery breakpoints */
