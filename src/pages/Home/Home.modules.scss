@@ -9,7 +9,7 @@
     #main-text {
       text-align: center;
       margin: 2rem;
-      font-size: 1.8em;
+      font-size: 1.7em;
       color: $whiteColor;
       letter-spacing: 2px;
       span {
@@ -18,7 +18,7 @@
     }
     #color-dance-text {
       color: $whiteColor;
-      font-size: 1em;
+      font-size: 0.8em;
       margin-bottom: 2rem;
       letter-spacing: 5px;
       text-align: center;
@@ -29,22 +29,21 @@
     }
   }
 }
-
 /* Below  360px width */
-@media (max-width: $smallDevices) {
+@media (min-width: 331px) and (max-width: $smallDevices) {
   .homepage {
     .mainhead {
       #main-text {
-        font-size: 1.5em;
+        font-size: 1.4em;
       }
       #color-dance-text {
-        font-size: 0.8em;
+        font-size: 0.7em;
       }
     }
   }
 }
 /* iPhone SE & 5 */
-@media (max-width: $iPhone5_se) {
+@media (min-width: 300px) and (max-width: $iPhone5_se) {
   .homepage {
     .mainhead {
       #main-text {
@@ -57,7 +56,7 @@
   }
 }
 /* Galaxy Fold Devices */
-@media (max-width: $galaxyFold) {
+@media (min-width: 240px) and (max-width: $galaxyFold) {
   .homepage {
     .mainhead {
       #main-text {
@@ -73,29 +72,43 @@
 }
 
 /* iPad Devices */
-@media (max-width: $iPad) {
+@media (min-width: 720px) and (max-width: $iPad) {
   .homepage {
     .mainhead {
       #main-text {
-        font-size: 2.2em;
+        font-size: 2em;
       }
       #color-dance-text {
-        font-size: 1.1em;
+        font-size: 1em;
       }
     }
   }
 }
 
 /* iPad Pro Devices */
-@media (max-width: $iPadPro) {
+@media (min-width: 950px) and (max-width: $iPadPro) {
   .homepage {
     .mainhead {
       #main-text {
-        font-size: 2.5em;
+        font-size: 2em;
       }
       #color-dance-text {
-        font-size: 1.3em;
+        font-size: 1em;
         margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+/* Big Screen Devices */
+@media (min-width: $bigScreen) {
+  .homepage {
+    .mainhead {
+      #main-text {
+        font-size: 2em;
+      }
+      #color-dance-text {
+        font-size: 1em;
       }
     }
   }

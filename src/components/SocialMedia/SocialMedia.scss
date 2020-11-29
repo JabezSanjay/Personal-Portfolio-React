@@ -44,7 +44,7 @@
 }
 
 /* iPhone SE & 5 */
-@media (max-width: $iPhone5_se) {
+@media (min-width: 300px) and (max-width: $iPhone5_se) {
   .socialmedia {
     ul {
       li {
@@ -57,7 +57,7 @@
 }
 
 /* Galaxy Fold Devices */
-@media (max-width: $galaxyFold) {
+@media (min-width: 240px) and (max-width: $galaxyFold) {
   .socialmedia {
     ul {
       li {
@@ -70,7 +70,7 @@
 }
 
 /* iPad Devices */
-@media (max-width: $iPad) {
+@media (min-width: 720px) and (max-width: $iPad) {
   .socialmedia {
     ul {
       li {
@@ -84,7 +84,7 @@
 }
 
 /* iPad Pro Devices */
-@media (max-width: $iPadPro) {
+@media (min-width: 950px) and (max-width: $iPadPro) {
   .socialmedia {
     ul {
       margin-bottom: 1rem;
