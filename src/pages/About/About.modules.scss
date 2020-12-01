@@ -1,0 +1,7 @@
+@import "../../scss/variables.scss";
+
+.aboutPage {
+  @include pageBackground();
+  @include flexCenter();
+  color: $whiteColor;
+}

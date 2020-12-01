@@ -3,6 +3,8 @@ import Navbar from "../../components/Navbar/Navbar";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
 import WaterFlowButton from "../../components/Buttons/WaterFlowButton";
 import About from "../About/About";
+import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
 import "./Home.modules.scss";
 
 const Home = () => {
@@ -21,6 +23,7 @@ const Home = () => {
   };
   return (
     <div>
+      <div id="progressbar"></div>
       <section className="homepage">
         {homepageContent()}
         <Navbar />
@@ -29,6 +32,12 @@ const Home = () => {
       </section>
       <section>
         <About />
+      </section>
+      <section>
+        <Projects />
+      </section>
+      <section>
+        <Contact />
       </section>
     </div>
   );

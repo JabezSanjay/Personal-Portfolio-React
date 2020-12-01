@@ -11,10 +11,11 @@
     text-transform: uppercase;
     width: 200px;
     overflow: hidden;
+    border-radius: 99px;
     span {
       position: relative;
       z-index: 1;
-      color: black;
+      color: $tertiaryColor;
       font-size: 20px;
       letter-spacing: 8px;
     }
@@ -25,7 +26,6 @@
       width: 200px;
       height: 200px;
       background: $primaryColor;
-      box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
       transition: 0.5s;
       &::before,
       &::after {

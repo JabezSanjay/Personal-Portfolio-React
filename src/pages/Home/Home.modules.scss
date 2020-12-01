@@ -2,8 +2,8 @@
 
 .homepage {
   @include pageBackground();
-  flex-direction: column;
   @include flexCenter();
+  flex-direction: column;
   .mainhead {
     #main-text {
       text-align: center;
@@ -112,4 +112,15 @@
       }
     }
   }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to top, $primaryColor, $secondaryColor);
+  border-radius: 10px;
 }

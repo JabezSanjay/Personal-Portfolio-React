@@ -1,5 +1,7 @@
 @import "../../scss/variables.scss";
 
-.aboutpage {
+.contactPage {
   @include pageBackground();
+  @include flexCenter();
+  color: $whiteColor;
 }
