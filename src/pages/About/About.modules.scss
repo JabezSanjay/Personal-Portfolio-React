@@ -4,4 +4,18 @@
   @include pageBackground();
   @include flexCenter();
   color: $whiteColor;
+  flex-direction: column;
+  &__images {
+    img:nth-child(1) {
+      width: 300px;
+    }
+    img:nth-child(2) {
+      width: 250px;
+    }
+    img {
+      width: 150px;
+      height: auto;
+      margin: 6em;
+    }
+  }
 }
