@@ -11,10 +11,13 @@
   padding: 20px;
   h2 {
     width: 100%;
-    color: $primaryColor;
+    color: $whiteColor;
     font-size: 36px;
     text-align: center;
     margin-bottom: 10px;
+    span {
+      color: $primaryColor;
+    }
   }
   .row100 {
     position: relative;
@@ -101,4 +104,42 @@ input[type="submit"] {
   background: $primaryColor;
   color: #000;
   font-size: 18px;
+  margin-bottom: 2rem;
+  &:hover {
+    background: $whiteColor;
+    color: $primaryColor;
+  }
+}
+
+/* iPhone SE & 5 */
+@media (min-width: 300px) and (max-width: $iPhone5_se) {
+  .container {
+    .row100 {
+      .inputBox {
+        .contact-text {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+/* Galaxy Fold Devices */
+@media (min-width: 240px) and (max-width: $galaxyFold) {
+  .container {
+    .row100 {
+      .inputBox {
+        .contact-text {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+/* Big Screen Devices */
+@media (min-width: $bigScreen) {
+  .container {
+    width: 50%;
+  }
 }

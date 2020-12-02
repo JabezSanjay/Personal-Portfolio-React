@@ -6,7 +6,9 @@ const Contact = () => {
   return (
     <section className="contactPage">
       <div className="container">
-        <h2>Contact Me</h2>
+        <h2>
+          Contact <span>Me</span>
+        </h2>
         <div className="row100">
           <div className="col">
             <div className="inputBox">
