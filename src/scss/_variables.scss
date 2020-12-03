@@ -32,6 +32,27 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
   }
 }
 
+@keyframes moveWords {
+  0% {
+    transform: translateY(0%);
+  }
+  15% {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(-100%);
+  }
+  60% {
+    transform: translateY(-100%);
+  }
+  85% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
 /* mixin */
 @mixin flexCenter {
   display: flex;

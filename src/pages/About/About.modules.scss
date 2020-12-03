@@ -4,18 +4,58 @@
   @include pageBackground();
   @include flexCenter();
   color: $whiteColor;
-  flex-direction: column;
-  &__images {
-    img:nth-child(1) {
-      width: 300px;
+  p {
+    margin: 0;
+  }
+  .wrapper {
+    height: 100%;
+    @include flexCenter;
+  }
+  .text {
+    margin: 0;
+    font-size: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    .line {
+      overflow: hidden;
+      white-space: nowrap;
+      height: 30px;
+      line-height: 0.9;
+      &:first-child {
+        & + .line {
+          margin-left: 81px;
+          & + .line {
+            margin-left: 163px;
+          }
+        }
+      }
+      > p {
+        margin: 0;
+        height: 70px;
+        overflow: hidden;
+        font-size: 1em;
+        line-height: 0.8;
+        white-space: nowrap;
+        animation: moveWords 5s infinite ease-in-out;
+      }
     }
-    img:nth-child(2) {
-      width: 250px;
+    .line:nth-child(odd) {
+      transform: skew(60deg, -20deg) scaleY(0.66667);
     }
-    img {
-      width: 150px;
-      height: auto;
-      margin: 6em;
+    .line:nth-child(even) {
+      transform: skew(0deg, -20deg) scaleY(1.33333);
+    }
+    .line.last {
+      // transform: skew(0deg,-20deg) scaleY(1.33333);
+      margin-left: 245px;
+    }
+    .line.first {
+      margin-left: 327px;
+    }
+    p::first-letter {
+      color: $primaryColor;
     }
   }
 }
