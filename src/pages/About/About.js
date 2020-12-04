@@ -10,31 +10,27 @@ import "./About.modules.scss";
 const About = () => {
   return (
     <div className="aboutPage">
-      {/* <h2 className="aboutPage__head">My Expertise</h2>
-      <p className="aboutPage__para">My skills mean a world to me</p> */}
+      <div className="head">
+        <h2 id="aboutHead">
+          My <span> Expertise</span>
+        </h2>
+        <p className="aboutPara">My skill means a world to me!</p>
+      </div>
 
-      <div class="mernContainer">
-        <div class="wrapper">
-          <h1 class="text">
-            <div class="line">
-              <p></p>
-              <p>MONGODB</p>
+      <div className="mernContainer">
+        <div className="wrapper">
+          <h1 className="text">
+            <div className="line">
+              <p>MongoDB</p>
             </div>
-            <div class="line">
-              <p>MONGODB</p>
+            <div className="line">
               <p>EXPRESS</p>
             </div>
-            <div class="line">
-              <p>EXPRESS</p>
+            <div className="line">
               <p>REACT</p>
             </div>
-            <div class="line last">
-              <p>REACT</p>
+            <div className="line last">
               <p>NODE</p>
-            </div>
-            <div class="line first">
-              <p>NODE</p>
-              <p></p>
             </div>
           </h1>
         </div>

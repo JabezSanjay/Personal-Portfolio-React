@@ -31,7 +31,6 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     transform: translate(-50%, -75%) rotate(360deg);
   }
 }
-
 @keyframes moveWords {
   0% {
     transform: translateY(0%);
@@ -52,7 +51,6 @@ $returnEasing: cubic-bezier(0.445, 0.05, 0.55, 0.95);
     transform: translateY(0%);
   }
 }
-
 /* mixin */
 @mixin flexCenter {
   display: flex;

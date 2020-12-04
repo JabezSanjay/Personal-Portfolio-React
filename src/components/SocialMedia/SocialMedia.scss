@@ -97,3 +97,18 @@
     }
   }
 }
+
+/* Big Screen Devices */
+@media (min-width: $bigScreen) {
+  .socialmedia {
+    ul {
+      margin-bottom: 1rem;
+      li {
+        margin: 0 25px;
+        a {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
