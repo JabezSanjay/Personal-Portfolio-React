@@ -1,11 +1,6 @@
 import React from "react";
 import "./About.modules.scss";
-// import Express from "../../images/express.svg";
-// import MongoDB from "../../images/mongodb.svg";
-// import ReactJs from "../../images/react.svg";
-// import NodeJs from "../../images/nodejs.svg";
-// import Sass from "../../images/sass.svg";
-// import Git from "../../images/git.svg";
+import AboutIllustration from "../../images/about_illus.svg";
 
 const About = () => {
   return (
@@ -14,7 +9,7 @@ const About = () => {
         <h2 id="aboutHead">
           My <span> Expertise</span>
         </h2>
-        <p className="aboutPara">My skill means a world to me!</p>
+        <img src={AboutIllustration} alt="My skill means a lot to me!" />
       </div>
 
       <div className="mernContainer">
