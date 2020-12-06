@@ -4,11 +4,19 @@ import SocialMedia from "../../components/SocialMedia/SocialMedia";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [mobileNumber, setMobileNumber] = useState("");
-  const [message, setMessage] = useState("");
+  const [details, setDetails] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    mobileNumber: "",
+    message: "",
+  });
+  const { firstName, lastName, email, mobileNumber, message } = details;
+
+  const handleChange = (name) => (event) => {
+    const value = event.target.value;
+    setDetails({ ...details, [name]: value });
+  };
 
   var templateParams = {
     firstName,
@@ -18,7 +26,7 @@ const Contact = () => {
     mobileNumber,
   };
 
-  const onSubmit = () => {
+  const onSubmit = (e) => {
     emailjs
       .send(
         "service_32f7p9t",
@@ -29,6 +37,7 @@ const Contact = () => {
       .then(
         function (response) {
           console.log("SUCCESS!", response.status, response.text);
+          window.location.reload(true);
         },
         function (error) {
           console.log("FAILED...", error);
@@ -42,14 +51,15 @@ const Contact = () => {
         <h2>
           Contact <span>Me</span>
         </h2>
+
         <div className="row100">
           <div className="col">
             <div className="inputBox">
               <input
                 type="text"
-                value={firstName}
-                onChange={(e) => setFirstName(e.target.value)}
-                required="required"
+                name="firstName"
+                onChange={handleChange("firstName")}
+                required
               />
               <span className="contact-text">First Name</span>
               <span className="contact-line"></span>
@@ -59,10 +69,9 @@ const Contact = () => {
             <div className="inputBox">
               <input
                 type="text"
-                name=""
-                value={lastName}
-                onChange={(e) => setLastName(e.target.value)}
-                required="required"
+                name="lastName"
+                onChange={handleChange("lastName")}
+                required
               />
               <span className="contact-text">Last Name</span>
               <span className="contact-line"></span>
@@ -73,11 +82,10 @@ const Contact = () => {
           <div className="col">
             <div className="inputBox">
               <input
-                type="text"
-                name=""
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required="required"
+                type="email"
+                name="email"
+                onChange={handleChange("email")}
+                required
               />
               <span className="contact-text">Email</span>
               <span className="contact-line"></span>
@@ -87,10 +95,9 @@ const Contact = () => {
             <div className="inputBox">
               <input
                 type="text"
-                name=""
-                value={mobileNumber}
-                onChange={(e) => setMobileNumber(e.target.value)}
-                required="required"
+                name="mobileNumber"
+                onChange={handleChange("mobileNumber")}
+                required
               />
               <span className="contact-text">Mobile Number</span>
               <span className="contact-line"></span>
@@ -100,9 +107,9 @@ const Contact = () => {
             <div className="col">
               <div className="inputBox textarea">
                 <textarea
-                  required="required"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
+                  required
+                  name="message"
+                  onChange={handleChange("message")}
                 ></textarea>
                 <span className="contact-text">Type your Message here!</span>
                 <span className="contact-line"></span>
@@ -115,6 +122,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
         <SocialMedia />
       </div>
     </section>
