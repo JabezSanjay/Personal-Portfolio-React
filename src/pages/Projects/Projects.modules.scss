@@ -3,5 +3,6 @@
 .projectPage {
   @include pageBackground();
   @include flexCenter();
+  justify-content: space-evenly;
   color: $whiteColor;
 }
