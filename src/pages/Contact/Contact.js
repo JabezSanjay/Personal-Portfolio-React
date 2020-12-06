@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.modules.scss";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
@@ -9,8 +10,30 @@ const Contact = () => {
   const [mobileNumber, setMobileNumber] = useState("");
   const [message, setMessage] = useState("");
 
+  var templateParams = {
+    firstName,
+    lastName,
+    email,
+    message,
+    mobileNumber,
+  };
+
   const onSubmit = () => {
-    console.log(firstName, lastName, email, mobileNumber, message);
+    emailjs
+      .send(
+        "service_32f7p9t",
+        "template_go0nyfk",
+        templateParams,
+        "user_tcbl8oIpC05Vp0aHDD3a6"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
   };
 
   return (
