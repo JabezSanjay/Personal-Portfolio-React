@@ -74,3 +74,60 @@
     }
   }
 }
+
+/* Moto G5 */
+@media (min-width: 331px) and (max-width: $smallDevices) {
+  .box {
+    width: 260px;
+    height: 300px;
+    .text {
+      div {
+        h3 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 13px;
+        }
+        img {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+/* iPhone SE & 5 */
+@media (min-width: 300px) and (max-width: $iPhone5_se) {
+  .box {
+    width: 230px;
+    height: 300px;
+    .text {
+      div {
+        margin-left: -20px;
+        h3 {
+          font-size: 22.5px;
+        }
+        p {
+          font-size: 13px;
+        }
+        img {
+          width: 190px;
+        }
+      }
+    }
+  }
+}
+/* Galaxy Fold Devices */
+@media (min-width: 240px) and (max-width: $galaxyFold) {
+}
+
+/* iPad Devices */
+@media (min-width: 720px) and (max-width: $iPad) {
+}
+
+/* iPad Pro Devices */
+@media (min-width: 950px) and (max-width: $iPadPro) {
+}
+
+/* Big Screen Devices */
+@media (min-width: $bigScreen) {
+}
