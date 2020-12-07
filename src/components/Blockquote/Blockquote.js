@@ -4,6 +4,7 @@ import "./Blockquote.modules.scss";
 const Blockquote = (props) => {
   let projectName = props.name;
   let projectDescription = props.description;
+  let projectImage = props.image;
 
   return (
     <div>
@@ -11,6 +12,7 @@ const Blockquote = (props) => {
         <div className="text">
           <div>
             <h3>{projectName}</h3>
+            <img src={projectImage} alt="" />
             <p>{projectDescription}</p>
           </div>
         </div>

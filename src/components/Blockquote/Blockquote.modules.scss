@@ -3,15 +3,20 @@
 .box {
   background-color: transparent;
   border-radius: 3px;
+  position: relative;
+  left: 50%;
+  top: 100%;
+  margin-top: 10rem;
   color: $whiteColor;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 280px;
   height: 300px;
   transform-style: preserve-3d;
   perspective: 2000px;
   transition: 0.4s;
   text-align: center;
   cursor: pointer;
+  transform: translate(-50%, -50%) rotateY(-20deg) skewY(3deg);
   &:before {
     content: "";
     position: absolute;
@@ -37,6 +42,8 @@
   }
 
   .text {
+    transform: rotateY(20deg) skewY(-3deg);
+
     position: absolute;
     top: 30px;
     left: -30px;
@@ -53,20 +60,17 @@
       text-align: center;
       padding: 30px 60px;
       h3 {
-        font-size: 30px;
+        font-size: 25px;
         margin-bottom: 5px;
         color: $primaryColor;
       }
       p {
-        font-size: 15px;
+        font-size: 12.5px;
         letter-spacing: 3px;
       }
+      img {
+        width: 200px;
+      }
     }
-  }
-  &:hover {
-    .text {
-      transform: rotateY(20deg) skewY(-3deg);
-    }
-    transform: translate(-50%, -50%) rotateY(-20deg) skewY(3deg);
   }
 }
