@@ -66,6 +66,55 @@
   }
 }
 
+/* Galaxy Fold Devices */
+@media (min-width: 240px) and (max-width: $galaxyFold) {
+  .aboutPage {
+    .text {
+      font-size: 35px;
+
+      .line {
+        height: 70px;
+        > p {
+          height: 70px;
+        }
+      }
+      p::first-letter {
+        font-size: 90px;
+      }
+    }
+  }
+}
+
+/* iPad Pro Devices */
+@media (min-width: 950px) and (max-width: $iPadPro) {
+  .aboutPage {
+    flex-direction: row;
+    .head {
+      h2 {
+        font-size: 3em;
+        margin-bottom: 1.2rem;
+      }
+      img {
+        width: 60%;
+        margin-top: 5rem;
+      }
+    }
+    .text {
+      font-size: 70px;
+      margin-right: 7.5rem;
+      .line {
+        height: 70px;
+        > p {
+          height: 70px;
+        }
+      }
+      p::first-letter {
+        font-size: 90px;
+      }
+    }
+  }
+}
+
 /* Big Screen Devices */
 @media (min-width: $bigScreen) {
   .aboutPage {

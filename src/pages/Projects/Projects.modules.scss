@@ -1,16 +1,33 @@
 @import "../../scss/variables.scss";
 
-.projectPage {
+.text {
   h1 {
+    text-align: center;
+    background: black;
     font-size: 3em;
-    margin: 5rem;
+    padding: 2rem;
+    color: $whiteColor;
     span {
       color: $primaryColor;
     }
   }
+}
+.projectPage {
   @include pageBackground();
   @include flexCenter();
   justify-content: space-evenly;
   flex-direction: column;
   color: $whiteColor;
+}
+
+/* Big Screen Devices */
+@media (min-width: $bigScreen) {
+  .text {
+    h1 {
+      font-size: 3.5em;
+    }
+  }
+  .projectPage {
+    flex-direction: row;
+  }
 }

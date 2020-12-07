@@ -6,7 +6,7 @@
   position: relative;
   left: 50%;
   top: 100%;
-  margin-top: 10rem;
+  margin-top: 12rem;
   color: $whiteColor;
   transform: translate(-50%, -50%);
   width: 280px;
@@ -43,7 +43,6 @@
 
   .text {
     transform: rotateY(20deg) skewY(-3deg);
-
     position: absolute;
     top: 30px;
     left: -30px;
@@ -118,16 +117,86 @@
 }
 /* Galaxy Fold Devices */
 @media (min-width: 240px) and (max-width: $galaxyFold) {
+  .box {
+    width: 200px;
+    height: 300px;
+
+    .text {
+      div {
+        margin-left: -30px;
+        h3 {
+          font-size: 22.5px;
+        }
+        p {
+          font-size: 13px;
+        }
+        img {
+          width: 190px;
+        }
+      }
+    }
+  }
 }
 
 /* iPad Devices */
 @media (min-width: 720px) and (max-width: $iPad) {
+  .box {
+    width: 400px;
+    height: 330px;
+    .text {
+      div {
+        h3 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 250px;
+        }
+      }
+    }
+  }
 }
 
 /* iPad Pro Devices */
 @media (min-width: 950px) and (max-width: $iPadPro) {
+  .box {
+    width: 400px;
+    height: 350px;
+    .text {
+      div {
+        h3 {
+          font-size: 30px;
+        }
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 250px;
+        }
+      }
+    }
+  }
 }
 
 /* Big Screen Devices */
 @media (min-width: $bigScreen) {
+  .box {
+    width: 400px;
+    height: 330px;
+    .text {
+      div {
+        h3 {
+          font-size: 32.5px;
+        }
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 250px;
+        }
+      }
+    }
+  }
 }

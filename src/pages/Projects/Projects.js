@@ -6,11 +6,11 @@ import coronaTrackerAppImage from "../../images/Corona-TrackerApp.PNG";
 
 const Projects = () => {
   return (
-    <div className="projectPage">
+    <div className="text">
       <h1>
         <span>Pro</span>jects
       </h1>
-      <div className="projectDisplay">
+      <div className="projectPage">
         <Blockquote
           name="Ecommerce WebApp"
           image={ecommerceWebAppImage}
