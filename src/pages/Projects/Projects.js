@@ -15,6 +15,7 @@ const Projects = () => {
           name="Ecommerce WebApp"
           image={ecommerceWebAppImage}
           description="MongoDB | Express | React | NodeJs"
+          url="https://tshirts-mern.herokuapp.com/"
         />
         <Blockquote
           name="Covid-19 Tracker"
