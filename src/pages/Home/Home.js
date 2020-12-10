@@ -23,7 +23,6 @@ const Home = () => {
   };
   return (
     <div>
-      <div id="progressbar"></div>
       <section className="homepage">
         {homepageContent()}
         <Navbar />
