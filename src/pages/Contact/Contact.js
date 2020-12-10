@@ -122,7 +122,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
         <SocialMedia />
       </div>
     </section>

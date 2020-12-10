@@ -24,10 +24,12 @@ const Home = () => {
   return (
     <div>
       <section className="homepage">
-        {homepageContent()}
-        <Navbar />
-        <SocialMedia />
-        <WaterFlowButton />
+        <div>
+          {homepageContent()}
+          <Navbar />
+          <SocialMedia />
+          <WaterFlowButton />
+        </div>
       </section>
       <section>
         <About />
