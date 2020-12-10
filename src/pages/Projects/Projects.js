@@ -21,7 +21,7 @@ const Projects = () => {
           name="Covid-19 Tracker"
           image={coronaTrackerAppImage}
           description="React | Material UI | Hooks | Chart.js"
-          url=""
+          url="https://corona-trackerapp.herokuapp.com/"
         />
       </div>
     </div>
